@@ -1,0 +1,30 @@
+@mixin title-h1 {
+  font-size: 4.0625rem;
+  font-family: $font-Bold;
+
+  @include r(768) {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin title-h2 {
+  font-size: 2.25rem;
+  font-family: $font-Extrabld;
+  text-transform: uppercase;
+
+  @include r(768) {
+    font-size: 1.7857rem;
+  }
+}
+
+.title-h1 {
+  @include title-h1;
+}
+
+.title-h2 {
+  @include title-h2;
+}
+
+.lh-16 {
+  line-height: 1.6;
+}

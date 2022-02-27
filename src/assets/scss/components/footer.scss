@@ -1,0 +1,105 @@
+.footer {
+  color: $white;
+
+  &-top {
+    padding: 33px 0 45px;
+    background-color: #2F2F2F;
+
+    @include r(768) {
+      padding-bottom: 15px;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  &-bottom {
+    position: relative;
+    padding: 12px 0;
+    background-color: #232323;
+  }
+}
+
+.footer-logo {
+  @include r(768) {
+    display: inline-block;
+    margin-bottom: 20px;
+    svg {
+      width: 83px;
+      height: 62px;
+    }
+  }
+}
+
+.footer-row {
+  display: flex;
+  gap: 50px;
+
+  @include r(1576) {
+    gap: 40px;
+  }
+
+  @include r(976) {
+    gap: 15px;
+  }
+
+  @include r(768) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-button {
+  svg {
+    stroke: $white;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+
+.footer-copy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @include r(768) {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+  }
+}
+.akt {
+  color: $white;
+
+  svg {
+    fill: $white;
+    @include ease;
+  }
+
+  &:hover {
+    color: $white;
+
+    svg {
+      fill: purple;
+    }
+  }
+}
+

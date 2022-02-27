@@ -1,0 +1,120 @@
+<section class="inner-offer offer" style="background-image: url('{{root}}assets/img/main-offer-bg.jpg')">
+    <div class="container">
+        <div class="inner-offer__layout">
+            <div class="offer__in">
+                <a href="#" class="offer__logo">
+                    <svg class="offer__logo-icon">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                </a>
+                <div class="offer__title">Прайс-лист</div>
+                <div class="offer__description">ООО «Акрон Юг» предлагает выгодные условия на прием металлолома в Ростове-на-Дону.
+                    Компания входит в ломозаготовительную группу «Акрон Холдинг» и занимается рециклингом
+                    сырья – от приема и переработки до поставки крупнейшим металлургическим комбинатам СНГ</div>
+            </div>
+            <div class="pricing-wrapper h-100">
+                <div class="pricing h-100">
+                    <div class="d-flex justify-content-center align-items-center mb-3 mb-xl-4">
+                        <svg width="20" height="33" fill="#F2C94C">
+                            <use xlink:href="#bolt"></use>
+                        </svg>
+                        <span class="upp font-22 ml-2">актуальные расценки</span>
+                    </div>
+                    <div class="pricing-table font-20 mb-3 mb-xl-5 w-100">
+                        <div class="pricing-row">
+                            <div class="pricing-column">Сталь</div>
+                            <div class="pricing-column">24 000 ₽/т </div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Железо</div>
+                            <div class="pricing-column">24 000 ₽/т</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Металлическая стружка</div>
+                            <div class="pricing-column">16 000 ₽/т</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Авто</div>
+                            <div class="pricing-column">22 000 ₽/т</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Аллюминий</div>
+                            <div class="pricing-column">200 ₽/кг</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Аллюминевые банки</div>
+                            <div class="pricing-column">50 ₽/кг</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">АКБ</div>
+                            <div class="pricing-column">50 ₽/кг</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Дюралюминий</div>
+                            <div class="pricing-column">1620 $/Т</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-column">Радиаторы</div>
+                            <div class="pricing-column">24 000 ₽/т</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center upp font-22 mb-3 mb-xl-4">
+                        Выгодные оптовые условия: <br>
+                        повышенный прайс от 200 кг
+                    </div>
+                    <a class="button button--primary" href="#">посмотреть прайс</a>
+                </div>
+            </div>
+            <div class="main-offer-adv">
+                <div class="row no-gutters main-offer-adv__list">
+                    <div class="col-xl-4 col-6 main-offer-adv__item-wrapper">
+                        <div class="main-offer-adv__item">
+                            <div class="main-offer-adv__icon">
+                                <svg width="80" height="83">
+                                    <use xlink:href="#main-offer-adv-1"></use>
+                                </svg>
+                            </div>
+                            <div class="main-offer-adv__text">Один из крупнейших промышленно-металлургических холдингов России</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-6 main-offer-adv__item-wrapper">
+                        <div class="main-offer-adv__item">
+                            <div class="main-offer-adv__icon">
+                                <svg width="65" height="71">
+                                    <use xlink:href="#main-offer-adv-2"></use>
+                                </svg>
+                            </div>
+                            <div class="main-offer-adv__text">Выгодные условия на прием металлолома в Ростове-на-Дону</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 main-offer-adv__item-wrapper">
+                        <div class="main-offer-adv__item">
+                            <div class="main-offer-adv__icon">
+                                <svg width="74" height="71">
+                                    <use xlink:href="#main-offer-adv-3"></use>
+                                </svg>
+                            </div>
+                            <div class="main-offer-adv__text">Рециклинг сырья: от приема и переработки до поставки крупнейшим металлургическим комбинатам СНГ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section--inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mb-4 mb-xl-0">
+                {{> price-list}}
+                <div class="d-flex flex-column flex-md-row">
+                    <button class="button button--primary mb-3 mb-md-0 mr-md-4 mr-xl-5" data-src="#popup--call" data-fancybox>оценить лом по фото</button>
+                    <a href="#" class="button button--primary" >где можно сдать</a>
+                </div>
+            </div>
+            {{> reasons}}
+        </div>
+    </div>
+</section>
+{{> is}}
+{{> map}}

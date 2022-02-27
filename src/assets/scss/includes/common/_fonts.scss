@@ -1,0 +1,46 @@
+$font-Thin: 'ProximaNovaT-Thin';
+$font-Light: 'ProximaNova-Light';
+$font-Regular: 'ProximaNova-Regular';
+$font-Bold: 'ProximaNova-Bold';
+$font-Semibold: 'ProximaNova-Semibold';
+$font-Extrabld: 'ProximaNova-Extrabld';
+$font-Black: 'ProximaNova-Black';
+
+.font-Thin {
+  font-family: $font-Thin;
+}
+.font-Light {
+  font-family: $font-Light;
+}
+.font-Regular {
+  font-family: $font-Regular;
+}
+.font-Bold {
+  font-family: $font-Bold;
+}
+.font-Semibold {
+  font-family: $font-Semibold;
+}
+.font-Extrabld {
+  font-family: $font-Extrabld;
+}
+.font-Black {
+  font-family: $font-Black;
+}
+
+.font-14 {
+  font-size: 0.875rem;
+}
+.font-18 {
+  font-size: 1.125rem;
+}
+.font-20 {
+  font-size: 1.25rem;
+}
+.font-22 {
+  font-size: 1.375rem;
+}
+
+.font-25 {
+  font-size: 1.5625rem;
+}

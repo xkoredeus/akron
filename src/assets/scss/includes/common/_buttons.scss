@@ -1,0 +1,82 @@
+button {
+  box-shadow: none;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+.button {
+  position: relative;
+  font-size: 0.85rem;
+  text-align: center;
+  display: inline-block;
+  @include ease;
+
+  &--primary {
+    font-family: $font-Bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $red;
+    padding: 20px 54px;
+
+    &:hover {
+      color: $white;
+      background-color: $darkRed;
+    }
+
+    &-outlined {
+      color: $red;
+      background-color: $tr;
+      border: 1px solid $red;
+
+      &:hover {
+        color: $white;
+        background-color: $red;
+      }
+    }
+  }
+
+  &--secondary {
+    font-family: $font-Semibold;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      margin-right: 27px;
+    }
+
+    svg {
+      width: 8px;
+      height: 14px;
+      stroke: $dark;
+      @include ease;
+    }
+
+    &:hover {
+      color: $red;
+
+      svg {
+        stroke: $red;
+        transform: translateX(3px);
+      }
+    }
+
+    &-invert {
+      color: $white;
+
+      svg {
+        stroke: $white;
+      }
+
+      &:hover {
+        color: $red;
+
+        svg {
+          stroke: $red;
+        }
+      }
+    }
+  }
+}

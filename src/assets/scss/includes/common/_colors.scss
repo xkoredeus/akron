@@ -1,0 +1,30 @@
+$dark: #222426;
+$red: #B60003;
+$darkRed: #850E10;
+$midRed: #B21D2E;
+$darkGrey: #686868;
+$grey: #F5F8FA;
+$tr: transparent;
+$black: #222426;
+
+.color-white {
+  color: #fff;
+}
+.color-black {
+  color: $black;
+}
+
+.color-red {
+  color: $red;
+}
+
+.color-grey {
+  color: $grey;
+}
+.color-darkGrey {
+  color: $darkGrey;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
