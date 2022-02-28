@@ -5765,6 +5765,7 @@ button {
 .button--secondary {
   font-family: "ProximaNova-Semibold";
   text-transform: uppercase;
+  color: #222426;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -6743,6 +6744,7 @@ li:not(:last-child) {
 .contacts-table__row {
   display: grid;
   padding: 10px 0;
+  grid-gap: 10px;
 }
 
 .contacts-table__row > div:last-child {
@@ -6771,7 +6773,7 @@ li:not(:last-child) {
 }
 
 .personal .contacts-table__row {
-  grid-template-columns: 32% 50% 18%;
+  grid-template-columns: 150px 1fr 150px;
 }
 
 .points .contacts-table__row {
@@ -7431,6 +7433,12 @@ li:not(:last-child) {
   position: relative;
   padding: 12px 0;
   background-color: #232323;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-bottom {
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {

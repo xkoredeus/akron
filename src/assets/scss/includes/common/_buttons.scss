@@ -39,6 +39,7 @@ button {
   &--secondary {
     font-family: $font-Semibold;
     text-transform: uppercase;
+    color: $dark;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;

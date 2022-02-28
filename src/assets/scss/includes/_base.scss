@@ -594,6 +594,7 @@ li:not(:last-child) {
   &__row {
     display: grid;
     padding: 10px 0;
+    grid-gap: 10px;
 
     & > div:last-child {
       text-align: right;
@@ -618,7 +619,7 @@ li:not(:last-child) {
 
 .personal {
   .contacts-table__row {
-    grid-template-columns: 32% 50% 18%;
+    grid-template-columns: 150px 1fr 150px;
   }
 }
 .points {

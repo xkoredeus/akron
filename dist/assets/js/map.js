@@ -23,20 +23,20 @@ $(document).ready(function () {
       {
         coords: [47.185511, 39.656425],
         icon: 'assets/img/baloon.svg',
-        icon_size: [62, 86],
-        icon_offset: [-31, -43], // -50% ширины, -100% высоты от точки привязки (левый верхний угол)
+        icon_size: [31, 43],
+        icon_offset: [-15.5, -21.5], // -50% ширины, -100% высоты от точки привязки (левый верхний угол)
       },
       {
         coords: [47.767689, 39.940580],
         icon: 'assets/img/baloon.svg',
-        icon_size: [62, 86],
-        icon_offset: [-31, -43],
+        icon_size: [31, 43],
+        icon_offset: [-15.5, -21.5],
       },
       {
         coords: [47.528465, 42.134257],
         icon: 'assets/img/baloon.svg',
-        icon_size: [62, 86],
-        icon_offset: [-31, -43],
+        icon_size: [31, 43],
+        icon_offset: [-15.5, -21.5],
       }
     ];
 
