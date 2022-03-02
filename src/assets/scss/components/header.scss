@@ -126,6 +126,19 @@
     align-items: flex-start;
   }
 
+  &__button {
+    padding-left: 15px;
+    display: none;
+
+    @include r(768) {
+      display: inline-block;
+    }
+
+    svg {
+      @include ease;
+    }
+  }
+
   &__link {
     color: $white;
     padding-top: 16px;
@@ -157,6 +170,12 @@
 
       @include r(768) {
         width: 100%;
+
+        &.active {
+          .header-nav__button svg {
+            transform: scaleY(-1);
+          }
+        }
       }
 
       &:not(:last-child) {
@@ -195,14 +214,15 @@
     width: 500px;
     height: 370px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
     visibility: hidden;
     opacity: 0;
     transform: translateY(-5px);
     @include ease;
+
+    &--short {
+      width: 170px;
+      height: auto;
+    }
 
     @include r(768) {
       position: relative;
@@ -214,8 +234,22 @@
       background-color: $tr;
       width: 100%;
       height: auto;
-      gap: 5px;
       padding: 0;
+      display: none;
+    }
+
+    &-in {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      @include r(768) {
+        gap: 5px;
+        flex-wrap: nowrap;
+      }
     }
 
     &-link {
@@ -319,8 +353,6 @@
     width: 32px;
     height: 32px;
     @include flex-center;
-    opacity: 0;
-    visibility: visible;
 
     svg {
       @include ease;
@@ -348,11 +380,6 @@
 
 .menu-open .header {
   background-color: #222426f0 !important;
-
-  .header-mobile__button {
-    opacity: 1;
-    visibility: visible;
-  }
 
   .header__content {
     opacity: 1;

@@ -97,6 +97,18 @@
     }
   }
 
+  @include r(576) {
+    &:nth-child(odd) {
+      &::before {
+        @include ovl;
+        width: calc(100% + 30px);
+        left: -15px;
+        background-color: $grey;
+        display: block;
+      }
+    }
+  }
+
   &:hover {
     .categories-item {
       &__in {

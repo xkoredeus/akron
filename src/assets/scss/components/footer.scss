@@ -29,6 +29,13 @@
 }
 
 .footer-logo {
+
+  @include ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
   @include r(768) {
     display: inline-block;
     margin-bottom: 20px;

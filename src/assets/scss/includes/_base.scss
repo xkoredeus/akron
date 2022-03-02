@@ -100,6 +100,12 @@ li:not(:last-child) {
     display: inline-block;
     margin-bottom: 3.125rem;
 
+    @include ease;
+
+    &:hover {
+      opacity: .7;
+    }
+
     @include r(1200) {
       display: none;
     }
@@ -333,6 +339,10 @@ li:not(:last-child) {
   grid-auto-rows: 305px;
   grid-gap: 25px;
 
+  @include r(1576) {
+    grid-auto-rows: 265px;
+  }
+
   @include r(976) {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: unset;
@@ -379,7 +389,7 @@ li:not(:last-child) {
   }
 
   &__picture {
-    height: 30%;
+    height: 40%;
     @include cv;
 
     @include r(976) {
