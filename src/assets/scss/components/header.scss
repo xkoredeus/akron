@@ -37,7 +37,7 @@
       visibility: hidden;
       display: flex;
       flex-direction: column;
-      background-color: #222426eb;
+      background-color: $dark;
     }
 
     @include r(768) {
@@ -137,6 +137,12 @@
     svg {
       @include ease;
     }
+
+    &.active {
+      svg {
+        transform: scaleY(-1);
+      }
+    }
   }
 
   &__link {
@@ -150,7 +156,7 @@
       font-family: $font-Bold;
       text-decoration: underline;
       padding-top: 8px;
-      padding-bottom: 8px;
+      padding-bottom: 13px;
     }
 
     &::before {
@@ -172,7 +178,7 @@
         width: 100%;
 
         &.active {
-          .header-nav__button svg {
+          & > .header-nav__button svg {
             transform: scaleY(-1);
           }
         }
@@ -247,7 +253,7 @@
       gap: 15px;
 
       @include r(768) {
-        gap: 5px;
+        gap: 8px;
         flex-wrap: nowrap;
       }
     }
@@ -256,6 +262,12 @@
       display: block;
       color: $white;
       margin-bottom: 10px;
+    }
+  }
+
+  &__subdropdown {
+    @include r(768) {
+      display: none;
     }
   }
 }
@@ -379,7 +391,7 @@
 }
 
 .menu-open .header {
-  background-color: #222426f0 !important;
+  background-color: $dark !important;
 
   .header__content {
     opacity: 1;

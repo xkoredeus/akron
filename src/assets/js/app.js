@@ -96,6 +96,11 @@ $(() => {
         .toggleClass('active')
         .find('.header-nav__dropdown').slideToggle();
   });
+  $('.js-toggle-subdropdown').on('click', function () {
+    $(this)
+        .toggleClass('active')
+        .next('.header-nav__subdropdown').slideToggle();
+  })
 
   $(document).on('click', function (e) {
     const container = $('.header');
