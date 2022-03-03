@@ -31,10 +31,6 @@ html, body {
   @include r(1576) {
     font-size: 15px;
   }
-
-  @include r(1200) {
-    font-size: 14px;
-  }
 }
 
 a {
